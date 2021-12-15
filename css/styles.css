@@ -1,0 +1,315 @@
+/* les différentes couleur utiles pour le site:
+      - marron clair: #92753D
+      - orange du ballon: #F48F19
+      - bleu foncé du logo: #16164F
+*/
+
+/* Importation des polices d'écritures */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap');
+
+* {
+    font-family: 'Lato' ;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0 auto;
+}
+
+p {
+    font-size: 15px;
+}
+
+/* entete de la page */
+
+header.header {
+    display: flex;
+    align-items: center;
+}
+
+
+header.header img {
+    width: 150px;
+}
+
+section.top-page {
+    background: url("../IMG/bg.jpg");
+    background-size: cover;
+    height: 90vh;
+    padding: 40px;
+}
+
+
+/* page de bienvenue */
+
+.landing-page {
+    padding: 20px 50px;
+
+}
+.big-title {
+    color: white;
+    font-size: 80px;
+    font-family:'Zen Antique';
+    font-weight: 100;
+    width: 100%;
+}
+
+/* menu de nav */
+
+nav.nav {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 400px;
+    margin-left: 5%;
+    bottom: 160px; 
+}
+
+nav.nav li a {
+    color: white;
+    text-decoration: none;
+    width: 100%;
+}
+
+nav.nav li a:hover {
+    color: #92753D;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+/* Valeurs */
+
+.valeurs {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px;
+}
+
+.valeur-item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.delivery-icon {
+    font-size: 50px;
+    color: #92753D;
+}
+
+.txt-val {
+    font-weight: 600;
+    width: 200px;
+    text-align: center;
+}
+
+/* Le club */
+
+.section-title {
+
+    font-size: 50px;
+    font-family: 'Zen Antique' ;
+    font-weight: 100;
+    position: relative;
+}
+
+.section-subtitle {
+    font-size: 25px;
+}
+
+.section-title::before {
+        content: "";
+    position: absolute;
+    background-color: #92753D;
+    width: 50px;
+    height: 7px;
+    bottom: 0;
+}
+
+.le-club  {
+    margin: 80px;
+}
+.teams {
+    min-height: 500px;
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+}
+
+.team-box {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    min-width: 350px;
+    height: 400px;
+    flex: 1;
+    color: black;
+}
+
+.no-grid {
+    min-width: 350px;
+    height: 300px;
+    flex: 1;
+}
+
+.baby {
+    background-image: url(../IMG/covid.jpg);
+}
+
+.team1 {
+    background-image: url(../IMG/sport.jpg);
+}
+
+.team2 {
+    background-image: url(../IMG/CM.jpg);
+}
+
+.team3 {
+    background-image: url(../IMG/jardinier.jpg);
+}
+
+.team4 {
+    background-image: url(../IMG/sports.jpg);
+}
+
+.team5 {
+    background-image: url(../IMG/projet.png);
+}
+
+.tramway {
+    background-image: url(../IMG/Tramay.jpg);
+}
+
+.photos {
+    display: flex;
+}
+
+.v3 {
+    background-image: url(../IMG/v3.jpg);
+}
+
+.team-details {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background-color: #FFFFFFDF;
+    padding: 5px 20px;
+}
+
+.team-name {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 3px;
+}
+
+.team-age {
+    color: #92753D;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 3px;
+}
+
+/* boutique */
+
+.Boutique {
+    margin: 80px;
+}
+
+.products {
+    min-height: 500px;
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+}
+
+.product-box {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    min-width: 350px;
+    height: 400px;
+    flex: 1;
+}
+
+.product1 {
+    background-image: url(../IMG/espacesverts.jpg);
+}
+
+.product2 {
+    background-image: url(../IMG/attractivité.jpg);
+}
+
+.product3 {
+    background-image: url(../IMG/aéroport.jpg);
+}
+
+.product4 {
+    background-image: url(../IMG/commerces.jpg);
+}
+
+a {
+    text-decoration: none;
+    color: #92753D;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.product-details {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background-color: #FFFFFFDF;
+    padding: 5px 20px;
+}
+
+.product-name {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 3px;
+    color: black;
+}
+
+.product-price {
+    color: #92753D;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 3px;
+}
+
+/* partenaires */
+
+
+.all-sponsors {
+    margin: 80px;
+}
+
+.sponso-grid {
+    display: grid;
+    min-height: 1000vh;
+}
+
+.sponso-box {
+    text-decoration: none;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 20px;
+    flex: 1;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 100px;
+    font-weight: 600;
+}
+
+footer a.cgu {
+    text-decoration: none;
+    color: black;
+}
